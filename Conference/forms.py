@@ -2,13 +2,20 @@ from django import forms
 from Conference.models import Registrationform
 
 CHOICES = [
+    ("Kampala","Kampala"),
+    ("Wakiso","Wakiso"),
     ("Mbarara","Mbarara"),
-    ("Kabale","Kabale")
+    ("Jinja","Jinja"),
+    ("Mukono","Mukono"),
+    ("FortPortal","FortPortal"),
+    ("Masaka","Masaka"),
 ]
 
 Programs = [
     ("BSCS","BSCS"),
-    ("LAW","LAW")
+    ("BSIT","BSIT"),
+    ("BSECS","BSECS"),
+    ("MIT","MIT"),
 
 ]
 class RegistrationForm(forms.ModelForm):
